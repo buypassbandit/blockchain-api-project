@@ -1,0 +1,122 @@
+.container{
+    background-color: #030e16;
+    height: 400px;
+}
+.developedWith{
+
+    padding-top: 2rem;
+    margin: auto;
+    max-width: 1200px;
+}
+.developedWith h2{
+    color: #ddf2ff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons img{
+    width: 140px;
+    height: 140px;
+    padding: 2rem;
+}
+/* Media Queries for Smartphone */
+@media only screen and (max-width: 500px) {
+    .container{
+        background-color: #030e16;
+        height: 250px;
+    }
+    .developedWith{
+
+        padding-top:2rem;
+        margin: auto;
+        max-width: 350px;
+    }
+    .developedWith h2{
+        color: #ddf2ff;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons img{
+        width: 55px;
+        height: 55px;    
+        padding:0.7rem;
+    }
+}
+/* Media Queries for Mid-Tier Tab */
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    .container{
+        background-color: #030e16;
+        height: 270px;
+    }
+    .developedWith{
+
+        padding-top:1.5rem;
+        margin: auto;
+        max-width: 450px;
+    }
+    .developedWith h2{
+        color: #ddf2ff;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons img{
+        width: 80px;
+        height: 80px;    
+        padding:1rem;
+    }
+
+}
+
+/* Media Queries for Tablet */
+@media only screen and (min-width: 769px) and (max-width: 968px) {
+    .container{
+        background-color: #030e16;
+        height: 290px;
+    }
+    .developedWith{
+
+        padding-top:1.5rem;
+        margin: auto;
+        max-width: 450px;
+    }
+    .developedWith h2{
+        color: #ddf2ff;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons img{
+        width: 90px;
+        height: 90px;    
+        padding:1.2rem;
+    }
+
+}
+
+/* Media Queries for Laptop and Desktop */
+@media only screen and (min-width: 969px) and (max-width: 1200px) {
+
+}
+
+/* Media Queries for Large Desktop */
+@media only screen and (min-width: 1201px) {
+    
+}

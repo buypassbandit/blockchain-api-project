@@ -1,0 +1,432 @@
+.container {
+  background-color: rgb(2, 24, 37);
+  padding-bottom: 1.5rem;
+}
+.dashboard {
+  padding-top: 1rem;
+  margin: auto;
+  max-width: 1300px;
+}
+.dashboard h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #02a4fc;
+  padding-bottom: 1rem;
+}
+.noteFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.noteDescription {
+  display: flex;
+  border: 1px solid red;
+  background-color: rgb(240, 110, 110);
+  width: 700px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+}
+.noteLogo {
+  width: 20px;
+  height: 20px;
+  padding-right: 0.6rem;
+}
+.dashboardHeading {
+  display: flex;
+  color: #4c88ad;
+}
+.dashboard h2 {
+  flex: 1;
+  margin: 1.7rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+/* important here */
+.dashboardHeading h2:nth-child(1) {
+  padding-right: 2.3rem;
+}
+
+.dashboardValues {
+  display: flex;
+  font-size: 0.8rem;
+  text-align: center;
+  color: white;
+  margin: 0.4rem;
+  border: 1px #133d57 solid;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  overflow: scroll;
+}
+.dashboardValues .coinImage {
+  width: 30px;
+  height: 30px;
+  padding-top: 0.5rem;
+  /* padding-left: 2.7rem; */
+}
+.dashboardValues:hover {
+  background-color: rgba(2, 2, 2, 0.2);
+  cursor: pointer;
+}
+
+h3 {
+  padding-right: 0.3rem;
+  text-transform: uppercase;
+  flex: 1;
+  color: #457694;
+}
+.symbolSpan {
+  color: rgb(185, 185, 185);
+}
+.negativeColor {
+  color: red;
+}
+.positiveColor {
+  color: green;
+}
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.errorText {
+  margin-top: 2rem;
+  border: 1px solid red;
+  background-color: rgb(240, 110, 110);
+  width: 350px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.errorLogo {
+  width: 30px;
+  height: 30px;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+}
+.errorGraph{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+/* Media Queries for Smartphone */
+@media only screen and (max-width: 500px) {
+  .dashboard {
+    padding-top: 1rem;
+  }
+  .dashboard h1 {
+    font-size: 2.7rem;
+    padding-bottom: 1rem;
+  }
+
+  .noteDescription {
+    background-color: rgb(240, 110, 110);
+    width: 350px;
+    font-size: 0.4rem;
+  }
+  .noteLogo {
+    width: 15px;
+    height: 15px;
+    padding-right: 0.1rem;
+    padding-left: 0.2rem;
+    margin-top: -0.7rem;
+  }
+
+  .dashboard h2 {
+    flex: 1;
+    margin: 0rem;
+    text-align: start;
+    /* padding-left: 0.5rem; */
+    font-size: 0.6rem;
+    padding-bottom: 1rem;
+  }
+  /* important here */
+  .dashboardHeading h2:nth-child(1) {
+    /* padding-right: 2rem; */
+    padding-right: 0rem;
+    margin-left: 0.9rem;
+    margin-right: -0.5rem;
+  }
+  .dashboardHeading h2:nth-child(3) {
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-left: -0.5rem;
+  }
+  .dashboardHeading h2:nth-child(4) {
+    margin-left: 0.6rem;
+  }
+  .dashboardHeading h2:nth-child(7) {
+    display: none;
+  }
+  .dashboardHeading h2:nth-child(8) {
+    display: none;
+  }
+
+  .dashboardValues {
+    display: flex;
+    font-size: 0.5rem;
+    text-align: center;
+    color: white;
+    margin: 0.4rem;
+    border: 1px #133d57 solid;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    overflow: scroll;
+  }
+  .dashboardValues h3:nth-child(9) {
+    display: none;
+  }
+  .dashboardValues h3:nth-child(8) {
+    display: none;
+  }
+  .dashboardValues .coinImage {
+    display: none;
+  }
+  .dashboardValues:hover {
+    background-color: rgba(2, 2, 2, 0.2);
+    cursor: pointer;
+  }
+
+  .errorText {
+    width: 250px;
+    font-size: 0.7rem;
+  }
+  .errorLogo {
+    width: 20px;
+    height: 20px;
+    padding-right: 1rem;
+    padding-top: 1.29rem;
+  }
+}
+.errorGraph{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2.5rem;
+  padding-right: 0rem;
+}
+
+/* Media Queries for Mid-Tier Tab */
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .dashboard {
+    padding-top: 1rem;
+
+  }
+  .dashboard h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .noteDescription {
+    background-color: rgb(240, 110, 110);
+    width: 470px;
+    font-size: 0.5rem;
+  }
+  .noteLogo {
+    width: 17px;
+    height: 17px;
+    padding-right: 0.1rem;
+    padding-left: 0.2rem;
+    margin-top: -0.3rem;
+  }
+
+  .dashboard h2 {
+    flex: 1;
+    margin: 0rem;
+    text-align: start;
+    /* padding-left: 0.5rem; */
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+   padding-left: 2rem;
+  }
+  /* important here */
+  .dashboardHeading h2:nth-child(1) {
+    /* padding-right: 2rem; */
+    padding-right: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .dashboardHeading h2:nth-child(3) {
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 0rem;
+  }
+  .dashboardHeading h2:nth-child(4) {
+    margin-left: 0rem;
+  }
+  .dashboardHeading h2:nth-child(7) {
+    display: none;
+  }
+  .dashboardHeading h2:nth-child(8) {
+    display: none;
+  }
+
+  .dashboardValues {
+    display: flex;
+    font-size: 0.5rem;
+    text-align: center;
+    color: white;
+    margin: 0.4rem;
+    border: 1px #133d57 solid;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    overflow: scroll;
+  }
+  .dashboardValues h3:nth-child(9) {
+    display: none;
+  }
+  .dashboardValues h3:nth-child(8) {
+    display: none;
+  }
+  .dashboardValues .coinImage {
+    width: 20px;
+    height: 20px;
+  }
+  .dashboardValues:hover {
+    background-color: rgba(2, 2, 2, 0.2);
+    cursor: pointer;
+  }
+
+  .errorText {
+    width: 250px;
+    font-size: 0.7rem;
+  }
+  .errorLogo {
+    width: 20px;
+    height: 20px;
+    padding-right: 1rem;
+    padding-top: 1.29rem;
+  }
+  .errorGraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-right: 0rem;
+  }
+}
+
+/* Media Queries for Tablet */
+@media only screen and (min-width: 769px) and (max-width: 968px) {
+  container {
+    background-color: rgb(2, 24, 37);
+    padding-bottom: 1.5rem;
+  }
+  .dashboard {
+    padding-top: 1rem;
+    margin: auto;
+    max-width: 1300px;
+  }
+  .dashboard h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #02a4fc;
+    padding-bottom: 1rem;
+  }
+  .noteFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .noteDescription {
+    display: flex;
+    border: 1px solid red;
+    background-color: rgb(240, 110, 110);
+    width: 700px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+  .noteLogo {
+    width: 20px;
+    height: 20px;
+    padding-right: 0.6rem;
+  }
+  .dashboardHeading {
+    display: flex;
+    color: #4c88ad;
+  }
+  .dashboard h2 {
+    flex: 1;
+    margin: 1.7rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  /* important here */
+  .dashboardHeading h2:nth-child(1) {
+    padding-right: 2.2rem;
+  }
+  
+  .dashboardHeading h2:nth-child(8) {
+    display: none;
+  }
+  
+  .dashboardValues {
+    display: flex;
+    font-size: 0.6rem;
+    text-align: center;
+    color: white;
+    margin: 0.4rem;
+    border: 1px #133d57 solid;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    overflow: scroll;
+  }
+  .dashboardValues .coinImage {
+    width: 20px;
+    height: 20px;
+    padding-top: 0.5rem;
+    /* padding-left: 2.7rem; */
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .dashboardValues h3:nth-child(9){
+    display: none;
+  }
+  .dashboardValues:hover {
+    background-color: rgba(2, 2, 2, 0.2);
+    cursor: pointer;
+  }
+  
+  h3 {
+    padding-right: 0.3rem;
+    text-transform: uppercase;
+    flex: 1;
+    color: #457694;
+  }
+  .symbolSpan {
+    color: rgb(185, 185, 185);
+  }
+  .negativeColor {
+    color: red;
+  }
+  .positiveColor {
+    color: green;
+  }
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .errorText {
+    margin-top: 2rem;
+    border: 1px solid red;
+    background-color: rgb(240, 110, 110);
+    width: 350px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .errorLogo {
+    width: 30px;
+    height: 30px;
+    padding-right: 1rem;
+    padding-top: 0.7rem;
+  }
+}

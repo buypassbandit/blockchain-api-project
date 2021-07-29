@@ -1,0 +1,163 @@
+.container {
+  /* background-color: whitesmoke; */
+  background-color: black;
+  box-shadow: 1px 1px 7px 1px #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.header {
+  margin: auto;
+  max-width: 1200px;
+  height: 3.5rem;
+}
+.logoImage {
+  width: 46px;
+  height: 46px;
+  padding-top: 0.5rem;
+}
+.leftSideHeader {
+  display: flex;
+}
+h1 {
+  flex: 1;
+  font-size: 1.6rem;
+}
+.one {
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
+.rightSideHeader {
+  display: flex;
+  padding-top: 0.3rem;
+  /* margin-top: -0.4rem; */
+}
+
+.links {
+  text-decoration: none;
+  color: #226089;
+}
+.links:hover {
+  color: #4592af;
+}
+
+/* Media Queries for Smartphone */
+@media only screen and (max-width: 500px) {
+  .header {
+    max-width: 350px;
+    margin: auto;
+  }
+  .logoImage {
+    width: 32px;
+    height: 32px;
+    padding-top: 0.9rem;
+  }
+  h1 {
+    font-size: 1.35rem;
+    padding-top: 0.25rem;
+  }
+  .one {
+    font-size: 1.05rem;
+    padding-top: 0.2rem;
+    padding-right: 0.4rem;
+  }
+}
+/* Media Queries for Mid-Tier Tab */
+@media only screen and (min-width: 501px) and (max-width:768px) {
+  .header {
+    max-width: 650px;
+    margin: auto;
+  }
+  .logoImage {
+    width: 36px;
+    height: 36px;
+    padding-top: 0.9rem;
+  }
+  h1 {
+    font-size: 1.55rem;
+    padding-top: 0.05rem;
+  }
+  .one {
+    font-size: 1.15rem;
+    padding-top: 0.15rem;
+    padding-right: 0.6rem;
+  }
+}
+/* Media Queries for Tablet */
+@media only screen and (min-width:769px) and (max-width:968px){
+  .header {
+    max-width:750px;
+    margin: auto;
+  }
+  .logoImage {
+    width: 39px;
+    height: 39px;
+    padding-top: 0.75rem;
+  }
+  h1 {
+    font-size: 1.65rem;
+  }
+  .one {
+    font-size: 1.2rem;
+    padding-top: 0.1rem;
+    padding-right: 0.6rem;
+  }
+}
+/* Media Queries for Laptop and Desktop */
+@media only screen and (min-width:969px) and (max-width:1200px){
+  .header {
+    max-width:850px;
+    margin: auto;
+  }
+  .logoImage {
+    width: 42px;
+    height: 42px;
+    padding-top: 0.7rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 0.95rem;
+  }
+  .one {
+    font-size: 1.27rem;
+    padding-top: 0rem;
+    padding-right: 1rem;
+  }
+}
+/* Media Queries for Large Desktop */
+@media only screen and (min-width:1201px){
+  .header {
+    margin: auto;
+    max-width: 1200px;
+    height: 3.5rem;
+  }
+  .logoImage {
+    width: 46px;
+    height: 46px;
+    padding-top: 0.5rem;
+  }
+  .leftSideHeader {
+    display: flex;
+  }
+  h1 {
+    flex: 1;
+    font-size: 1.6rem;
+  }
+  .one {
+    padding-right: 1rem;
+    font-size: 1.2rem;
+  }
+  .rightSideHeader {
+    display: flex;
+    padding-top: 0.3rem;
+    /* margin-top: -0.4rem; */
+  }
+  
+  .links {
+    text-decoration: none;
+    color: #226089;
+  }
+  .links:hover {
+    color: #4592af;
+  }
+}
